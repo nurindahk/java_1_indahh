@@ -48,8 +48,10 @@ public class Tugasjava_indahrabu3 {
             default :
                 System.out.print("Maaf, Silahkan imput ulang");
         }
+        if (jumlah_pesanan>=1 && jumlah_pesanan<=2) {
         total=harga*jumlah_pesanan;
         System.out.print("Tiket telah dipesan oleh "+nama_pemesan+" jurusan "+nama_jurusan+" dengan jumlah "+jumlah_pesanan+" tiket dengan total bayar yaitu "+total);
     
+}
 }
 }
