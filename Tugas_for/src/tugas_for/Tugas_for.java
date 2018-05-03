@@ -47,7 +47,7 @@ public class Tugas_for {
                     System.out.print(" Berasal dari Cirebon");
                     break;
                 default :
-                    System.out.print("Kode kota tidak tersedia");
+                    System.out.print(" Kode kota tidak tersedia");
                     break;
             }
                     
