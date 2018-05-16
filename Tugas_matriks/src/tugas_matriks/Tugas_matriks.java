@@ -5,6 +5,8 @@
  */
 package tugas_matriks;
 
+import java.util.Scanner;
+
 /**
  *
  * @author GeeksFarm
@@ -17,10 +19,29 @@ public class Tugas_matriks {
     public static void main(String[] args) {
         // TODO code application logic here
         
-         int matriks_a [][] = new int [2][2];
+        int matriks_a [][] = new int [2][2];
         int matriks_b[][] = new int [2][2];
         
-        matriks_a[0][0]=9;
+        Scanner input_matriks=new Scanner (System.in);
+        
+        System.out.println("INPUT MATRIKS A");
+        for(int i=0;i<2;i++) {
+            for(int j=0;j<2;j++) {
+                System.out.print("Masukkan Angka Untuk matriks A ["+i+"] ["+j+"] : ");
+                matriks_a[i][j]=input_matriks.nextInt();
+            }
+        }
+        System.out.println();
+        
+        System.out.println("INPUT MATRIKS B");
+        for(int i=0;i<2;i++) {
+            for(int j=0;j<2;j++) {
+                System.out.print("Masukkan Angka Untuk matriks B ["+i+"] ["+j+"] : ");
+                matriks_b[i][j]=input_matriks.nextInt();
+            }
+        }
+        System.out.println();
+        /*matriks_a[0][0]=9;
         matriks_a[0][1]=8;
         matriks_a[1][0]=7;
         matriks_a[1][1]=6;
@@ -29,7 +50,7 @@ public class Tugas_matriks {
         matriks_b[0][1]=2;
         matriks_b[1][0]=3;
         matriks_b[1][1]=4;
-        
+        */
         int hasil_pengurangan[][] = new int [2][2];
         
         for(int i=0;i<2;i++) {
@@ -37,7 +58,7 @@ public class Tugas_matriks {
                  hasil_pengurangan[i][j]=matriks_a[i][j]-matriks_b[i][j];
             }
         }
-         System.out.println("Matriks A");
+        System.out.println("Matriks A");
         for(int i=0;i<2;i++) {
              System.out.print("[");
             for(int j=0;j<2;j++) {
