@@ -110,7 +110,6 @@ class Elektronik {
                 return jumlah;
         
     }
-        //function Kembalian
        
         //Procedure OUTPUT
         public void output () {
